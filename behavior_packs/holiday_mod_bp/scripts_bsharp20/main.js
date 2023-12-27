@@ -180,7 +180,6 @@ SNIPPET_PlayersReady("holiday_mod_player_ready", (_payload) => {
     LISTENFOR_LocalTimer({
         snippet: "holiday_mod_pacing_delay_intro",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        waitTime: 5.0
     })
 
     Once()

@@ -52,10 +52,9 @@
      ],
      "messages": {
         "holiday_mod_intro_message": {
-            "message": "holiday_mod.intro.message",
-            "title": "holiday_mod.intro.message.title",
-            "display_time": 10.0,
-            "priority": 2
+          "message": "holiday_mod.intro.message",
+          "title": "holiday_mod.intro.message.title",
+          "priority": 2
         },
        // ======================= PLAYER ==========================
        "player_died": {

@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "holiday_mod",
-        "description": "Defeat the Horde of the Frost and bring back Holiday cheer!",
+        "name": "holiday_mod.title",
+        "description": "holiday_mod.description",
         "uuid": "22037134-8726-42da-8a4b-b88dbc664a1e",
         "version": [0, 0, 1],
         "min_engine_version": [1, 16, 0]
@@ -11,7 +11,17 @@
         {
             "type": "data",
             "uuid": "e2e16c17-bf98-43b9-8484-b3c540984ae2",
-            "version": [1, 0, 0]
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "f9d5a920-d209-4d78-9d68-9eadec1642cb",
+            "version": [
+                0,
+                0,
+                1
+            ]
         }
     ]
 }
