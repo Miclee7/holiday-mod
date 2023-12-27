@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:entity_struct_gate_door_frostbrick",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Entity_Struct"
+          },
+        "components": {
+            "badger:aabb": {
+                "width": 11.0,
+                "length": 1.0,
+                "height": 7.0
+            },
+            "badger:tags": {
+                "tags": [
+                    "block"
+                ]
+            },
+            "badger:exclude_from_spatial_partition": {}
+        }
+    }
+}

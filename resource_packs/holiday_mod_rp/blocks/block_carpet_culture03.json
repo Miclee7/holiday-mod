@@ -1,0 +1,32 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_carpet_culture03": {
+      "textures": {
+        "up": {
+          "smart": {
+            "default": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_l", 
+            "empty": "textures/blocks/tex_smartexture_test_empty", 
+            "L": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_l", 
+            "line": "textures/blocks/tex_smartexture_test_01_line", 
+            "cross": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_cross", 
+            "spoke": "textures/blocks/tex_smartexture_test_01_spoke", 
+            "T": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_t"
+          }
+        }, 
+        "down": {
+          "smart": {
+            "default": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_l", 
+            "empty": "textures/blocks/tex_smartexture_test_empty", 
+            "L": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_l", 
+            "line": "textures/blocks/tex_smartexture_test_01_line", 
+            "cross": "textures/blocks/culture03/tex_block_carpet_culture03_pattern_cross", 
+            "spoke": "textures/blocks/tex_smartexture_test_01_spoke", 
+            "T": "textures/blocks/blocks/culture03/tex_block_carpet_culture03_pattern_t"
+          }
+        }, 
+        "side": "textures/culture03/tex_block_carpet_culture03_pattern_l"
+      }
+    }
+  }
+}

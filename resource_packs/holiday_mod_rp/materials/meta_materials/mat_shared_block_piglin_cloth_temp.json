@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_block_piglin_cloth_temp:base_block_cutout": {
+        "material": "decorations_fancy",
+        "textures": {
+            "diffuseMap": "textures/blocks/piglin_frost/tex_shared_block_piglin_cloth_temp_d",
+            "coeffMap": "textures/blocks/piglin_frost/tex_shared_block_piglin_cloth_temp_mr",
+            "normalMap": "textures/blocks/piglin_frost/tex_shared_block_piglin_cloth_temp_n"
+            
+            
+        }
+    }
+}

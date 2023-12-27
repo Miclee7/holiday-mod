@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_edge_frostbrick_02", 
+      "material": "badger_nether"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "camera_collision": false, 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "connection_family": "block_edge_frostbrick_01", 
+        "connect_to_family": "block_edge_frostbrick_01"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "netherrack", 
+          "gatherable_denether"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "netherrack"
+      }
+    }
+  }
+}

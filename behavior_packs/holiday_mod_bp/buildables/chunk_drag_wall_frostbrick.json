@@ -1,0 +1,133 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_drag_wall_frostbrick",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_chunk_wall_frostbrick",
+        "tooltip_title": "structures.chunk_drag_wall_frostbrick.name",
+        "tactical_description":"structures.chunk_drag_wall_frostbrick.tactical_description",
+        "tooltip_description": "structures.chunk_drag_wall_frostbrick.description",
+        "buildable_category": "utility",
+        "sort_order": 1100
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "wall",
+          "defense-target"
+        ]
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_ice_timeline"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 3
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water", 
+          "lava", 
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard" 
+        ]
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 1,
+          "rc": 2,
+          "ct": 1
+        }
+      },
+      "badger:multistep_buildable": {
+        "segments": {
+          "buildable": "badger:chunk_drag_wall_panel_frostbrick"
+        },
+        "mid_segment_count": 10,
+        "max_slope": -1,
+        "placement_cursor_range": 60,
+        "style": "grounded",
+        "max_segments": 51,
+        "shared_health_group_size": 4,
+        "auto_place_start": false,
+        "cap_piece_name": "badger:chunk_drag_wall_frostbrick"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_drag_wall_frostbrick",
+        "build_time": 0.5,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_chunk_drag_wall"        
+      },
+      "badger:loot": {
+        "table": "common_structure"
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 0
+      },
+      "badger:culture": {
+        "base_culture_a": 2
+      },
+      "badger:buildable_foundation": {
+        "nbt_file": "drag_wall_foundation_frostbrick",
+        "style": "pillar"
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [],
+        "construction_disabled_components": [
+          "badger:culture"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 1.5,
+            "delay": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:village_influence": {
+        "amount": 1
+      },
+      "badger:template": [
+        "badger:template_wall",
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_player"
+      ],
+      "badger:zone_visualization": {
+        "group": "mason_and_carpenter"
+      }
+    }
+  }
+}

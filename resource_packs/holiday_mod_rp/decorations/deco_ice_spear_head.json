@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_ice_spear_head": {
+      "geometry": "geometry.block_deco_ice_spear_head", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

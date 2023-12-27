@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_netherice_frost_var01",
+      "material": "badger_stone"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "badger:block_type": {
+        "tags": [
+          "netherrack",
+          "gatherable_denether"
+        ]
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }
+    }
+  }
+}

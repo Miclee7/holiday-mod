@@ -1,0 +1,19 @@
+{
+    "format_version": "1.15.0", 
+    "badger:client_block": {
+      "badger:block_frostbrick_trim_culture03": {
+        "textures": {
+          "down": "textures/blocks/piglin_frost/tex_block_frostbrick", 
+          "up":  {
+            "smart": { 
+                "default" : "textures/blocks/tpiglin_frost/tex_block_frostbrick_culture03_trim_top",
+                "L" : "textures/blocks/piglin_frost/tex_block_frostbrick_culture03_trim_L",
+                "line" : "textures/blocks/piglin_frost/tex_block_frostbrick_culture03_trim_line",
+                "spoke": "textures/blocks/piglin_frost/tex_block_frostbrick_culture03_trim_spoke"
+              }
+            },
+          "side": "textures/blocks/piglin_frost/tex_block_frostbrick_culture03_trim_side"
+        }
+      }
+    }
+  }

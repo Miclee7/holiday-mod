@@ -1,0 +1,15 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_glacier_ice": {
+            "isotropic":{
+                "up": true
+            },
+            "textures": {
+                "up": "textures/blocks/frostbite_fells/tex_block_glacier_ice_top",
+                "down": "textures/blocks/frostbite_fells/tex_block_glacier_ice_top",
+                "side": "textures/blocks/frostbite_fells/tex_block_glacier_ice_mid"
+            }
+        }
+    }
+}

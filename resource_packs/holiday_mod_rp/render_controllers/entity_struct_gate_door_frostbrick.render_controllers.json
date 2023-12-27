@@ -1,0 +1,14 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_gate_door_frostbrick": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_entity_player_frostbite": "MetaMaterial.mat_shared_block_entity_player_frostbite"
+        }
+      ],
+      "textures": ["Texture.default","Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

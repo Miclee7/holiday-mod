@@ -1,0 +1,26 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_frostbite_iceruins_03"
+    },
+
+    "structure_name": "frostbite_fells/iceruins_03",
+    "placement_range": {
+      "x": [-6, 6],
+      "y": [-6, 0],
+      "z": [-6, 6]
+    },
+
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_glacier_ice"
+        ]
+      }
+    }
+  }
+}

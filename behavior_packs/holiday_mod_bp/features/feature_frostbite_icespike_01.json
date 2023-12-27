@@ -1,0 +1,25 @@
+{
+
+  "format_version": "1.13.0",
+
+  "code:place_nbt": {
+    "description": {
+      "identifier": "badger:feature_frostbite_icespike_01"
+    },
+
+    "structure_name": "frostbite_fells/icespike_01",
+    "placement_range": {
+      "x": [-2, 2],
+      "z": [-2, 2]
+    },
+
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {
+        "block_allow_list": [
+          "badger:block_glacier_ice"
+        ]
+      }
+    }
+  }
+}

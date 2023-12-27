@@ -1,0 +1,131 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_apply_freeze_piglin_frost",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "zoner_apply_freeze_piglin_frost",
+        "tooltip_title": "structures.trap.piglin.frost.freeze.name",
+        "tactical_description": "structures.trap.piglin.frost.freeze.tactical_description",
+        "tooltip_description": "structures.trap.piglin.frost.freeze.description",
+        "buildable_category": "utility",
+        "sort_order": 1500,
+        "height_offset": 0
+      },
+      "badger:culture": {
+        "base_culture_a": 50
+      },
+      "badger:health": {
+        "max_health": 50
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 100,
+        "defense_multiplier": {
+          "key": "freeze_trap",
+          "value": 1.05
+        }
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_apply_freeze_piglin_frost",
+        "build_time": 5,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_freeze_trap"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 25
+          },
+          {
+            "item": "diamond",
+            "amount": 5
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water", 
+          "lava", 
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": ["badger:culture"],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:targeting"
+        ]
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_wood_small"
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            1.5, 
+            0
+          ]
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:template_structure_player"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "defense-target",
+          "freezeTrap",
+          "tier1PlayerStructure",
+          "buffable-war_drums"
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:zone_visualization": {
+        "group": "carpenter"
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 2.5,
+            "delay": 1,
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:village_influence": {
+        "amount": 5
+      }
+    }
+  }
+}

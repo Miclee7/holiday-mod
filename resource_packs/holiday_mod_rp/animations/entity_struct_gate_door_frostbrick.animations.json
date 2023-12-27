@@ -1,0 +1,193 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.entity_struct_gate_door_frostbrick.opening": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "export_joints": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.0666666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.028413837775588036,0.0]
+            },
+            "0.166666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.13660499453544617,0.0]
+            },
+            "0.333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.27320998907089233,0.0]
+            },
+            "lod_distance": 0.0
+          }
+        },
+        "joint_gate_jnt": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.0333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.0666666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-224.21926879882812]
+            },
+            "0.1": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-224.21926879882812]
+            },
+            "0.133333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-389.2929153442383]
+            },
+            "0.166666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-389.2929153442383]
+            },
+            "0.2": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-558.8621635437012]
+            },
+            "0.233333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-558.8621635437012]
+            },
+            "0.333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-727.5787048339844]
+            },
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame",
+      "particle_effects": {
+        "0":  [
+          {
+            "effect": "fx_open",
+            "enabled": true,
+            "locator": "loc_gate_origin"
+          }
+        ]
+      },
+      "sound_effects": {
+        "0":  [
+          {
+            "effect": "open",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    "animation.entity_struct_gate_door_frostbrick.closing": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_gate_jnt": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-727.5789947509766]
+            },
+            "0.0333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-727.5789947509766]
+            },
+            "0.0666666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-596.182731628418]
+            },
+            "0.1": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-596.182731628418]
+            },
+            "0.133333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-596.182731628418]
+            },
+            "0.166666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-372.6142044067383]
+            },
+            "0.233333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-372.6142044067383]
+            },
+            "0.333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame",
+      "particle_effects": {
+        "0.01":  [
+          {
+            "effect": "fx_close",
+            "enabled": true,
+            "locator": "loc_gate_origin"
+          }
+        ]
+      },
+      "sound_effects": {
+        "0":  [
+          {
+            "effect": "close",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    "animation.entity_struct_gate_door_frostbrick.hidden": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_gate_jnt": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": [0.0,0.0,-2311.5543212890625],
+            "0.166666666667": [0.0,0.0,-2311.5543212890625],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": true
+    },
+    "animation.entity_struct_gate_door_frostbrick.open": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "export_joints": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": [0.0,0.2732052505016327,0.0],
+            "0.133333333333": [0.0,0.2732052505016327,0.0],
+            "lod_distance": 0.0
+          }
+        },
+        "joint_gate_jnt": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": [0.0,0.0,-727.5789947509766],
+            "0.133333333333": [0.0,0.0,-727.5789947509766],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": true
+    }
+  }
+}

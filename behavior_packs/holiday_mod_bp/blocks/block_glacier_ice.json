@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_glacier_ice",
+      "material": "badger_ice"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block",
+        "directional_texture": false,
+        "render_layer": "blend",
+        "directional_shape": false
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:terrain_type": {
+        "terrain": "snow"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_sheet_frostbrick_icy": {
+            "geometry": "geometry.block_deco_sheet_frostbrick_icy_geo",
+            "shadow": true,
+            "up": "surface",
+            "forward": "world"
+        }
+    }
+}

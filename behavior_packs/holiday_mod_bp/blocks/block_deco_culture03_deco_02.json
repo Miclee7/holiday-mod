@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_culture03_deco_02", 
+      "material": "badger_grass"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": true, 
+        "directional_shape": true
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

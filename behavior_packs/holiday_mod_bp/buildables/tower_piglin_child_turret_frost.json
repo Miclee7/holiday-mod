@@ -1,0 +1,154 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_child_turret_frost",
+      "runtime_identifier": "badger:buildable"
+    },
+    "mushroom_data": {
+      "role": "Building",
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:template": [
+        "badger:template_structure_piglin",
+        "badger:template_structure_child_entity_piglin"
+      ],
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob Targeting
+          {
+            "name": "tower_piglin_turret_frost_mob",
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "buildable_combat",
+              "donotattack"
+            ],
+            "enable_with_line_of_sight": true,
+            "alliance_rule_filter": "enemy",
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 360,
+              "radius": 50,
+              "thickness": 30,
+              "rotation": 0,
+              "position": [
+                0.0,
+                -5.0,
+                0.0
+              ]
+            },
+            "actions": [
+              "turret"
+            ]
+          },
+          {
+            "name": "tower_piglin_buildable_turret_frost",
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "enable_with_line_of_sight": true,
+            "exclude_tags": [
+              "mob",
+              "player",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 360,
+              "radius": 50,
+              "thickness": 30,
+              "rotation": 0,
+              "position": [
+                0.0,
+                -5.0,
+                0.0
+              ]
+            },
+            "actions": [
+              "turret"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "turret",
+            "trigger": "on_blazerod_shoot",
+            "on_hit_target_trigger": "on_tower_piglin_arrow_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "min_range": 0,
+              "max_range": 55
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "cooldown_time": 1.25,
+              "deactivates_on_cooldown": false
+            },
+            "shoot": {
+              "projectile": "badger:proj_blazerod",
+              "position_offsets_from_center": [
+                [
+                  -3.5,
+                  0,
+                  0
+                ],
+                [
+                  3.5,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  -3.5
+                ],
+                [
+                  0,
+                  0,
+                  3.5
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 8.75,
+                "damage_types": [
+                  "neutral",
+                  "fire"
+                ]
+              }
+            },
+            "accuracy": {
+              "min_range": 0,
+              "max_range": 2,
+              "scale_with_range": true
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buldableChild",
+          "block"
+        ]
+      }
+    }
+  }
+}

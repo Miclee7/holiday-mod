@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_frostbrick_pillar_base_culture03": {
+      "decoration": "deco_culture03_pillar_base"
+    }
+  }
+}

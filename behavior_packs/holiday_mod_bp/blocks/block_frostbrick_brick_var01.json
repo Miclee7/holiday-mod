@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_frostbrick_brick_var01", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "block", 
+        "directional_texture": false, 
+        "directional_shape": true
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "gatherable_denether"
+        ]
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

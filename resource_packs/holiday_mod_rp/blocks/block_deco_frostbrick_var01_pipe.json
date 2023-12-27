@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_frostbrick_var01_pipe": {
+            "decoration": "deco_frostbrick_var01_pipe", 
+            "textures": {
+            "up": "textures/blocks/piglin_frost/tex_block_netherice_frost",
+            "down": "textures/blocks/piglin_frost/tex_block_frostbrick",
+            "side": "textures/blocks/piglin_frost/tex_block_frostbrick_var01_icy_side"
+        }
+    }
+}
+}

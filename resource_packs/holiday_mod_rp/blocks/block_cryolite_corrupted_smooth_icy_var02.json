@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_cryolite_corrupted_smooth_icy_var02": {
+      "textures": "textures/blocks/piglin_frost/tex_block_cryolite_corrupted_smooth_icy_var02"
+    }
+  }
+}

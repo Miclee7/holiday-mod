@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_frost_piglin_allegiance_cage"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true,
+        "collision_shape": "empty"
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "minecraft:block_light_emission": {
+        "emission": [
+          255,
+          241,
+          216,
+          255
+        ]
+      }
+    }
+  }
+}

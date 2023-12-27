@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_stone", 
+      "identifier": "badger:block_stair_frostbrick"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "stair", 
+        "directional_texture": true, 
+        "directional_shape": true, 
+        "collision_shape": "stairs"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

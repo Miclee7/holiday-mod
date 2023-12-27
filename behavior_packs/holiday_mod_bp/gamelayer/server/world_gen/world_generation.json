@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "image_logging": false,
+    "global_blend_kernel_sigma": 0.75,
+    "global_blend_down_preference_factor": 2.0,
+    "first_world_placement_name": "center",
+    "generic_biome_name": "nether_frost",
+    "wetness_spread_levels": 14,
+    "border_restore_max_operations": 50,
+    "max_restart_attempts": 128,
+    "boundary_pad_pixels": 3
+  }
+}

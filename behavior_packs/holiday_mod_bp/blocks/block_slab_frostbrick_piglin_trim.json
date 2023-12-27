@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_slab_frostbrick_piglin_trim", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "slab", 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "connection_family": "block_frostbrick_village_trim", 
+        "connect_to_family": "block_frostbrick_village_trim"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

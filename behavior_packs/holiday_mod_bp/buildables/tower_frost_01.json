@@ -1,0 +1,122 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_frost_01",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "tower_frost_01",
+        "tooltip_title": "structures.tower.frost_01.name",
+        "tactical_description": "structures.tower.frost_01.tactical_description",
+        "tooltip_description": "structures.tower.frost_01.description",
+        "buildable_category": "utility",
+        "sort_order": 1300
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "tower_frost_01",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_tower_arrow"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 35
+          },
+          {
+            "item": "stone",
+            "amount": 35
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water", 
+          "lava", 
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:health": {
+        "max_health": 175
+      },
+      "badger:zone_visualization": {
+        "group": "towers_upgrade_structures"
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:culture": {
+        "base_culture_a": 35
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": ["badger:culture"],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:targeting"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "tower",
+          "buffable-crows_nest",
+          "buffable-war_drums",
+          "buffable-kaboomery",
+          "defense-target",
+          "arrowTower",
+          "tier1PlayerStructure"
+        ]
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 250
+      },
+      "badger:buildable_snap_point": {},
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 2.5,
+            "delay": 1,
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:village_influence": {
+        "amount": 5
+      },
+      "badger:template": [
+        "badger:template_tower_with_foundation",
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_player"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_deco_banner_frost_piglin_allegiance"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty", 
+        "directional_texture": false, 
+        "directional_shape": true, 
+        "collision_shape": "slab"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }
+    }
+  }
+}

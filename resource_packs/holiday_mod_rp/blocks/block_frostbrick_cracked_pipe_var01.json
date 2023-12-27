@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_frostbrick_cracked_pipe_var01": {
+      "textures": {
+        "up": "textures/blocks/piglin_frost/tex_block_frostbrick_cracked_pipe_var01",
+        "down": "textures/blocks/piglin_frost/tex_block_frostbrick_cracked_pipe_var01",
+        "side": "textures/blocks/piglin_frost/tex_block_frostbrick_cracked_rotate"
+      }
+    }
+}
+}

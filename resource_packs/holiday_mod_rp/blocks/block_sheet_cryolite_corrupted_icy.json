@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_sheet_cryolite_corrupted_icy": {
+            "textures": {
+                "up": "textures/blocks/piglin_frost/tex_block_cryolite_corrupted_icy",
+                "down": "textures/blocks/piglin_frost/tex_block_cryolite_corrupted_icy",
+                "side": "textures/blocks/piglin_frost/tex_block_cryolite_corrupted"
+            }
+        }
+    }
+}

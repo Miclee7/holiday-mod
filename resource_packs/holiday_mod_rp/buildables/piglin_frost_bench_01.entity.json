@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:piglin_frost_bench_01",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_construction_start": {
+          "particles": [
+            {
+              "effect": "badger:fx_placement_03x03",
+              "enabled": true,
+              "bind_to_actor": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

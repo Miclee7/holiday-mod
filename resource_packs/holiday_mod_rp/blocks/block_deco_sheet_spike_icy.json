@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_sheet_spike_icy": {
+            "decoration": "deco_sheet_spike_icy",
+            "textures": "textures/blocks/tex_debug"
+        }
+    }
+}

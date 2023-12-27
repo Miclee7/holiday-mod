@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_frostbite_iceruins_scatter"
+    },
+    "places_feature": "badger:feature_frostbite_iceruins_weighted",
+    "x": {
+      "extent": [
+        -4,
+        8
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -4,
+        8
+      ],
+      "distribution": "gaussian"
+    },
+    "iterations": "math.random(5,12)",
+    "scatter_chance": 5,
+    "project_input_to_floor": false,
+    "y": {
+      "extent": [
+        -4.0,
+        4.0
+      ],
+      "distribution": "gaussian"
+    }
+  }
+}

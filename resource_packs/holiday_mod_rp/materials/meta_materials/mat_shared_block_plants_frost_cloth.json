@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0", 
+  "mat_shared_block_plants_frost_cloth:base_block_cutout": {
+    "material": "DecorationsFancy",
+    "culling": "none",
+    "textures": {
+      "diffuseMap": "textures/blocks/piglin_frost/tex_shared_block_plants_frost_d", 
+      "coeffMap": "textures/blocks/piglin_frost/tex_shared_block_plants_frost_mr", 
+      "emissiveMap": "textures/blocks/piglin_frost/tex_shared_block_plants_frost_e",
+      "normalMap": "textures/blocks/piglin_frost/tex_shared_block_plants_frost_n"
+    }
+  }
+}

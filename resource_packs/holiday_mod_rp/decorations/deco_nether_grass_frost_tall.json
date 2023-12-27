@@ -1,0 +1,17 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_nether_grass_frost_tall": {
+      "geometry": "geometry.block_deco_nether_grass_frost_tall_geo", 
+      "shadow": true,
+      "random_orientation": true,
+      "wind_strength": 0.1,
+      "type": "middle",
+      "probability": "medium",
+      "collision": {
+          "mode": "vertex",
+          "intensity": 0.8
+      }
+    }
+  }
+}

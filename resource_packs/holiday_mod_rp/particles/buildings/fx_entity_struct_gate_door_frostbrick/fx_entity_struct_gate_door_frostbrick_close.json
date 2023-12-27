@@ -1,0 +1,36 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_entity_struct_gate_door_frostbrick_close",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         }
+      },
+      "events" : {
+         "debris_left" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_entity_struct_gate_door_frostbrick_close_debris_left",
+               "type" : "emitter_bound"
+            }
+         },
+         "debris_right" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_entity_struct_gate_door_frostbrick_close_debris_right",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "timeline" : {
+               "0.200000" : [ "debris_left" ],
+               "0.250000" : [ "debris_right" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

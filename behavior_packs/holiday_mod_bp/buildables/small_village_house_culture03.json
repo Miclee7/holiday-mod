@@ -1,0 +1,91 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "components": {
+            "badger:buildable_presentation": {
+                "buildable_category": "mobs",
+                "icon": "structure_spawner_villager_culture03",
+                "sort_order": 10146,
+                "tactical_description": "structures.spawner.villager_culture03.tactical_description",
+                "tooltip_description": "structures.spawner.villager_culture03.description",
+                "tooltip_title": "structures.spawner.villager_culture03.name",
+                "height_offset": 1
+            },
+            "badger:buildable_requirement": {
+                "invalid_blocks": [],
+                "invalid_block_tags": [
+                  "water",
+                  "lava",
+                  "barrier",
+                  "world_hazard"
+                ]
+              },
+            "badger:buildable_structure": {
+                "build_time": 0,
+                "construction_end_trigger": "on_construction_end",
+                "construction_start_trigger": "on_construction_start",
+                "buildable_placed_player_trigger": "on_building_spawner_stone_golem",
+                "nbt_file": "culture03_igloo_01"
+            },
+            "badger:buildable_spawner": {
+                "types": [
+                  {
+                    "type": "badger:animal_direwolf",
+                    "percentage": 0.4
+                  },
+                  {
+                    "type": "badger:villager_culture03",
+                    "percentage": 0.2
+                  },
+                  {
+                    "type": "badger:villager_illager_culture03",
+                    "percentage": 0.2
+                  },
+                  {
+                    "type": "badger:mob_vindicator_culture03",
+                    "percentage": 0.2
+                  }
+                ],
+                "cap": 12,
+                "batch": 1,
+                "rate": 5,
+                "max_radius": 16,
+                "max_height_difference": 1,
+                "disable_wander": false,
+                "enable_recall": false,
+                "requires_input": false,
+                "has_spawn_cost": false
+              },
+              "badger:text_markup_icon_name": {
+                "name": "key.item.villagerCulture01Spawner"
+              },
+              "badger:culture": {
+                "base_culture_a": 10
+              },
+              "badger:tags": {
+                "tags": [
+                  "buildable",
+                  "buildable_combat",
+                  "buildable_structure",
+                  "player_buildable",
+                  "spawner",
+                  "villagerSpawner",
+                  "tier2PlayerStructure"
+                ]
+              },
+            "badger:template": [
+                "badger:template_structure",
+                "badger:template_spawner"
+            ]
+        },
+        "description": {
+            "identifier": "badger:small_village_house_culture03",
+            "is_summonable": true,
+            "runtime_identifier": "badger:buildable"
+        },
+        "mushroom_data": {
+            "function": "Spawner",
+            "type": "Player"
+        }
+    }
+}

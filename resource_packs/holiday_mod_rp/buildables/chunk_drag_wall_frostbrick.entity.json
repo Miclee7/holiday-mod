@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:chunk_drag_wall_frostbrick",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:block_source_removal" : {},
+      "badger:template": "badger:template_structure",
+      "badger:presentation_event": {
+        "on_block_swap_start": {
+          "audio": "BAE_mason_upgrade_start_drag"
+        },
+        "on_block_swap_stop": {
+          "audio": "BAE_mason_upgrade_stop_drag"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_wall_destroyed"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_wall_damage_state_1"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_wall_damage_state_2"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_wall_damage_state_3"
+        },
+        "on_healing_applied_to_structure_0": {
+          "audio": "BAE_carpenter_heal_full"
+        },
+        "on_healing_applied_to_structure_1": {
+          "audio": "BAE_carpenter_heal_stage1"
+        },
+        "on_healing_applied_to_structure_2": {
+          "audio": "BAE_carpenter_heal_stage2"
+        },
+        "on_stretch_foundation_placed": {
+          "audio": "BAE_structure_placement_player_small"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "settings": {
+    "enabled": true,
+    "allow_village_overlap": true,
+    "biome_always_takes_priority": true,
+    "attempts_per_square_kilometre": 1000,
+    "placement_biome_names": ["frostbite_fells","frostbite_fells_glacier_mountain_peaks","frostbite_fells_glacier_mountain_upper","frostbite_fells_glacier_mountain_mid","frostbite_fells_glacier_mountain_lower","frostbite_fells_glacier_mountain_spike_lower","frostbite_fells_glacier_mountain_spike_mid","frostbite_fells_glacier_mountain_spike_peaks"],
+    "place_on_biome": "frostbite_fells",
+    "place_on_biome_parent": "frostbite_fells",
+    "biome_tag": "glacier_mountains",
+    "min_texture_corners_in_correct_biome": 2,
+    "max_group_size": 12,
+    "max_attempts_to_find_group_pos": 50,
+    "max_failures": 30000,
+    "min_distance_between_groups": 850,
+    "small_displacement_range": [100, 220],
+    "medium_displacement_range": [180, 240],
+    "large_displacement_range": [50, 350],
+    "huge_scatters_large": [1, 3],
+    "large_scatters_medium": [2,4],
+    "medium_scatters_small": [1,4],
+    "small_scatters_small_chance": 0.25,
+    "huge_rate": 2,
+    "large_rate": 0,
+    "medium_rate": 0,
+    "small_rate": 0,
+    "huge_relative_height": [0.9, 1.0],
+    "large_relative_height": [0.75, 0.95],
+    "medium_relative_height": [0.7, 0.8],
+    "small_relative_height": [0.6, 0.85]
+  },
+  "texture_registry": {
+    "texture_key": "glacier_mountains",
+    //"optional_rare_texture_name": "tex_stamp_mountain_large_01",
+    //"max_attempts_rare_placement": 100,
+    "huge": [
+      "tex_stamp_glacier_mountain_huge_01",
+      "tex_stamp_glacier_mountain_huge_02",
+      "tex_stamp_glacier_mountain_huge_03"
+    ],
+    "large": [
+      "tex_stamp_glacier_mountain_large_01",
+      "tex_stamp_glacier_mountain_large_02"
+    ],
+    "medium": [
+      "tex_stamp_glacier_mountain_med_01",
+      "tex_stamp_glacier_mountain_med_02",
+      "tex_stamp_glacier_mountain_med_03",
+      "tex_stamp_glacier_mountain_med_04",
+      "tex_stamp_glacier_mountain_med_05",
+      "tex_stamp_glacier_mountain_med_06"
+   ],
+    "small": [
+      "tex_stamp_glacier_mountain_sml_01",
+      "tex_stamp_glacier_mountain_sml_02",
+      "tex_stamp_glacier_mountain_sml_03"
+    ],
+    "huge_texture_size": 1325,
+    "large_texture_size": 512,
+    "medium_texture_size": 312,
+    "small_texture_size": 180
+  }
+}

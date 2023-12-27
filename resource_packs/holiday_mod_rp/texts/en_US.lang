@@ -1,0 +1,10 @@
+holiday_mod.title=Holiday Mod	### Pack name
+holiday_mod.description=Defeat the Horde of the Frost!	### Pack description
+wiki.title=Holiday Mod	### I don't know what this does
+
+holiday_mod.reward.title=Complete!	### Text that shows when you win
+holiday_mod.objective=Saved Holiday Cheer	### Objective text that indicates what you're supposed to do.
+
+
+holiday_mod.intro.message=You have one chance! Don't die!	### Objective message title
+holiday_mod.intro.message.title=Destroy the portal!	### Objective message title

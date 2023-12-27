@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_drag_wall_panel_piglin_frost",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "PvP",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "walltest2",
+        "build_time": 1.25,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 3
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:template": [
+        "badger:template_wall",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:gate_frostbrick",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_gate_frostbrick",
+        "tooltip_title": "structures.gate_frostbrick.name",
+        "tactical_description":"structures.gate_frostbrick.tactical_description",
+        "tooltip_description": "structures.gate_frostbrick.description",
+        "buildable_category": "utility",
+        "sort_order": 1000
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 50
+          },
+          {
+            "item": "stone",
+            "amount": 50
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water", 
+          "lava", 
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard" 
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "gate_piglin_frost",
+        "build_time": 15,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_gate"
+      },
+      "badger:culture": {
+        "base_culture_a": 50
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_gate_frostbrick"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            6, 
+            3, 
+            0
+          ],
+          [
+            -6, 
+            3, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "gate",
+          "buffable-crows_nest",
+          "defense-target"
+        ]
+      },
+      "badger:buildable_foundation": {
+        "nbt_file": "gate_foundation_frostbrick",
+        "placement_rule": "always"
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 0
+      },
+      "badger:buildable_snap_point": {},
+      "badger:offline_traits": {
+        "offline_disabled_components": ["badger:culture"],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:targeting"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 8,
+            "delay": 1,
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:village_influence": {
+        "amount": 5
+      },
+      "badger:template": [
+        "badger:template_gate",
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_player"
+      ],
+      "badger:zone_visualization": {
+        "group": "mason_and_carpenter"
+      }
+    }
+  }
+}

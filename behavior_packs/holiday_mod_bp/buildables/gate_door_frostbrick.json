@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:gate_door_frostbrick",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 11,
+        "height": 8,
+        "length": 3
+      }
+    }
+  }
+}

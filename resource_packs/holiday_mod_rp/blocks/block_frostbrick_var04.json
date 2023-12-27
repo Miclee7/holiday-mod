@@ -1,0 +1,8 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_frostbrick_var04": {
+            "textures": "textures/blocks/piglin_frost/tex_block_frostbrick_var04"
+        }
+    }
+}

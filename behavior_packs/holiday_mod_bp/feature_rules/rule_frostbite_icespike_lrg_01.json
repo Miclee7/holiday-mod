@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_frostbite_icespike_lrg_01",
+      "places_feature": "badger:feature_frostbite_icespike_lrg_scatter"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": 5,
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "frostbite_fells"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(1,2)",
+      "scatter_chance": 7,
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [-16, 16]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [-16, 16]
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_frost_piglin_allegiance_cage": {
+      "decoration": "deco_frost_piglin_allegiance_cage"
+    }
+  }
+}

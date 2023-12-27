@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_netherice_frost_small": {
+            "textures": "textures/blocks/tex_debug",
+            "decoration": "deco_netherice_frost_small"
+        }
+    }
+}

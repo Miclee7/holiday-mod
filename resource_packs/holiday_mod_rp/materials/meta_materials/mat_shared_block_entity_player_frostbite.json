@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_block_entity_player_frostbite:base_block_entity_cutout_with_construction": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 0,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "culling": "none",
+        "textures": {
+            "diffuseMap": "textures/blocks/tex_shared_block_player_frostbite_d",
+            "coeffMap": "textures/blocks/tex_shared_block_player_frostbite_mr",
+            "emissiveMap": "textures/blocks/tex_shared_block_player_frostbite_e",
+            "normalMap": "textures/blocks/tex_shared_block_player_frostbite_n"
+        },
+        "uniforms": {
+            "ConstructionTime": "1.0 + variable.const_time",
+            "GlowColor": [
+                "0.25",
+                "0.875",
+                "1.0",
+                "0.0"
+            ],
+            "GlowIntensity": 50.0,
+            "GlowTime": 1.0,
+            "GlowBorderSize": 0.6,
+            "GlowBorderFade": 8.0,
+            "Age": "query.age"
+        }
+    }
+}

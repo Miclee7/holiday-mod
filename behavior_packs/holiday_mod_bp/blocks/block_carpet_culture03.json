@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_carpet_culture03", 
+      "material": "badger_grass"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "carpet", 
+        "directional_texture": false, 
+        "directional_shape": false, 
+        "connection_family": "block_carpet_culture03", 
+        "connect_to_family": "block_carpet_culture03"
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:terrain_type": {
+        "terrain": "grass"
+      }
+    }
+  }
+}

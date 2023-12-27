@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_frostbrick_pipe", 
+      "material": "badger_stone"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": true, 
+        "directional_shape": true
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "piglin_base_not_buildable"
+        ]
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

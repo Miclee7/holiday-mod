@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_cryolite_corrupted", 
+      "material": "badger_metal"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube", 
+        "directional_texture": false, 
+        "directional_shape": false
+      }, 
+      "minecraft:destroy_time": {
+        "value": 10
+      }, 
+      "badger:block_type": {
+        "tags": [
+          "deco_nether", 
+          "piglin_base_not_buildable"
+        ]
+      }, 
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      }, 
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

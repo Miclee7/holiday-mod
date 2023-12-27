@@ -1,0 +1,33 @@
+{
+	"game_modes": [
+		{
+			"parent": "myth",
+			"behavior_pack": "22037134-8726-42da-8a4b-b88dbc664a1e",
+			"lobby_session_template_name": "BadgerLobby_8p",
+			"game_session_template_name": "BadgerGame_8p",
+			"default_privacy": 1,
+			"loading_tip_set": "campaign",
+			"max_players": 8,
+			"requires_online_premium": true,
+			"name": "holiday_mod",
+			"resource_pack": "f9d5a920-d209-4d78-9d68-9eadec1642cb",
+			"telemetry_name": "holiday_mod",
+			"lobby_title": "hbui.lobby.mythVersus.screenTitle",
+			"invite_detail": "hbui.inviteReceived.mythInviteDetail",
+            "invite_panel_text": "hbui.inviteReceivedItem.invite.myth",
+			"host_warning_string": "hbui.inviteReceived.hostWarningContentCampaign",
+            "lobby_chat_new_message": "lobby.myth.new",
+            "lobby_chat_resume_message": "lobby.resume.myth",
+			"ui_style": "myth",
+			"generate_match_guid": true,
+			"reports_telemetry": true,
+			"activity_enabled": true,
+			"lobby_name": "Holiday Test Lobby"
+		}
+	],
+	"myths_hub_host_list": [
+		{
+			"name": "holiday_mod_test"
+		}
+	]
+}

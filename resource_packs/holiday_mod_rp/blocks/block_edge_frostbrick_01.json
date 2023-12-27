@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_edge_frostbrick_01": {
+            "textures": {
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/piglin_frost/tex_block_glacierrack",
+                          "empty" :"textures/blocks/piglin_frost/tex_block_glacierrack",
+                          "L" : "textures/blocks/piglin_frost/tex_block_edge_frostbrick_L_down",
+                          "line" : "textures/blocks/piglin_frost/tex_block_edge_frostbrick_line",
+                          "cross" : "textures/blocks/piglin_frost/tex_block_glacierrack",
+                          "spoke" : "textures/blocks/piglin_frost/tex_block_edge_frostbrick_line",
+                           "T" : "textures/blocks/piglin_frost/tex_block_edge_frostbrick_T"
+                      }
+                },          
+                "side": "textures/blocks/piglin_frost/tex_block_glacierrack"
+                }
+            }
+        }
+    }

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_frostbite_icewall_lrg_scatter"
+    },
+    "places_feature": "badger:feature_frostbite_icewall_lrg_weighted",
+    "x": {
+      "extent": [
+        -4,
+        8
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -4,
+        8
+      ],
+      "distribution": "gaussian"
+    },
+    "iterations": "1",
+    "scatter_chance": 8,
+    "project_input_to_floor": false,
+    "y": {
+      "extent": [
+        -4.0,
+        4.0
+      ],
+      "distribution": "gaussian"
+    }
+  }
+}

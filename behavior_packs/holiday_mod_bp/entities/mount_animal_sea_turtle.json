@@ -1,0 +1,172 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mount_animal_sea_turtle",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Animal"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.01,
+        "height": 0.8
+      },
+      "badger:loot": {
+        "table": "common_animal"
+      },
+      
+      "badger:movement": {
+        "move_speed": 16
+      },
+      "badger:physics": {
+        "water_speed_modifier": 5,
+        "gravity": -100,
+        "friction": 0.04
+      },
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 1.1,
+        "interpolation_speed": 10
+      },
+      "badger:collision_weight": {
+        "weight": 15
+      },
+      "badger:jump": {
+        "initial_height": 1.1,
+        "hold_velocity": {
+          "start": 0.0,
+          "end": 0.0
+        },
+        "hold_duration": 0.1
+      },
+      "badger:tags": {
+        "tags": [
+          "sea_turtle",
+          "luredirect",
+          "mount",
+          "animal",
+          "mob",
+          "neutral",
+          "pattable_animal"
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Pat Pat
+          {
+            "name": "pat_pat",
+            "max_range": 15,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "pat_pat"
+            ]
+          },
+          //Animal_Targeting
+          {
+            "name": "turtle_piglin_evade",
+            "max_range": 15,
+            "include_tags": [
+              "piglin"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "evade"
+            ]
+          },
+          {
+            "name": "turtle_player_follow",
+            "max_range": 2,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "follow_player"
+            ]
+          },
+          {
+            "name": "turtle_roam_dig",
+            "max_range": 30,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "locator_sea_turtle_roam"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "turtle_dig"
+            ]
+          },
+          {
+            "name": "turtle_roam_combat_pos",
+            "max_range": 30,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [
+              "locator_sea_turtle_roam"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          }
+        ]
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "sc": 1,
+          "rc": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.5
+      },
+      "badger:mount": {
+          "include_tags": [
+              "rider"
+          ],
+          "alliance_rule_filter": "friendly",
+          "unlock_requirement": "unlock_quest_mount_01",
+          "base_skin": "badger:mount_tiger"
+      },
+      "badger:has_saddle": {
+          "search_range": 0.0,
+          "mount_range": 0.0,
+          "despawn_if_dismounted": true
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:interacts_with_blocks": {},
+      "badger:fall_damage": {
+        "min_damage_distance": 5,
+        "min_damage": 20,
+        "trigger_event": "on_fall_damage_received"
+      },
+      "badger:template": [
+        "badger:template_mount"
+      ]
+    }
+  }
+}

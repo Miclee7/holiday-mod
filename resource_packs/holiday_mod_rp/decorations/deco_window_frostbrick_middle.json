@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_window_frostbrick_middle": {
+            "geometry": "geometry.block_deco_window_frostbrick_middle_geo",
+            "up": "world",
+            "forward": "surface",
+            "type": "horizon",
+            "probability": "always"
+        }
+    }
+}

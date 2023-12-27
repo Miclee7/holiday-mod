@@ -1,0 +1,39 @@
+{
+  "id": "tex_stamp_glacier_mountain_large_02",
+  "textures": [
+    {
+      "texture": "glacier_mountains/tex_stamp_glacier_mountain_large_02",
+      "channels": {
+        "r": "blend",
+        "g": "biome",
+        "b": "terrain_height"
+      }
+    }
+  ],
+  "additional_data" : {
+    "absolute_height" : true
+  },
+
+  "biome_map": [
+    {
+      "biome": "frostbite_fells_glacier_mountain_peaks",
+      "value": 200
+    },
+    {
+      "biome": "frostbite_fells_glacier_mountain_upper",
+      "value": 180
+    },  
+    {
+      "biome": "frostbite_fells_glacier_mountain_mid",
+      "value": 160
+    },  
+    {
+      "biome": "frostbite_fells_glacier_mountain_lower",
+      "value": 140
+    },
+    {
+      "biome": "frostbite_fells",
+      "value": 100
+    }
+  ]
+  }

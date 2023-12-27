@@ -1,0 +1,57 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_gate_door_frostbrick.default": {
+      "initial_state": "gate_closed",
+      "states": {
+        "closing": {
+          "animations":  [
+            {
+              "closing": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "gate_closed": "query.all_animations_finished"
+            }
+          ]
+        },
+        "gate_closed": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "opening": "(variable.isgateopened > 0)"
+            }
+          ]
+        },
+        "open": {
+          "animations":  [
+            {
+              "open": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "closing": "(variable.isgateopened == 0)"
+            }
+          ]
+        },
+        "opening": {
+          "animations":  [
+            {
+              "opening": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

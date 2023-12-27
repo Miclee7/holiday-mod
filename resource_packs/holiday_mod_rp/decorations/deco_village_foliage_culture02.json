@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_village_foliage_culture02": {
+      "geometry": "geometry.block_deco_village_foliage_culture02", 
+      "shadow": true,
+      "normals_interpolation" : 0.0,
+      "type": "middle",
+      "random_orientation": true,
+      "wind_strength": 0.025
+  }
+}
+}

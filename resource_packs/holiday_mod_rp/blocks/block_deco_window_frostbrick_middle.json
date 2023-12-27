@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_window_frostbrick_middle": {
+            "decoration": "deco_window_frostbrick_middle",
+            "textures": "blank"
+        }
+    }
+}

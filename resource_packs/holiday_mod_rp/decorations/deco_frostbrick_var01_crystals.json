@@ -1,0 +1,19 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_frostbrick_var01_crystals": {
+      "geometry": "geometry.block_deco_frostbrick_var01_crystals_geo", 
+      "shadow": true, 
+      "random_orientation": false,
+      "wind_strength": 0.0,
+      "probability": "0.33",
+      "normals_interpolation": 0.0,
+      "collision": {
+          "mode": "instance",
+          "intensity": 0.0
+      },
+      "up": "world", 
+      "forward": "surface"
+    }
+  }
+}

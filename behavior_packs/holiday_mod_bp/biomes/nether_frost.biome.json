@@ -1,0 +1,79 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "animal" : {},
+         "badger:overworld_height" : {
+            "height_params" : {
+               "average_height" : 39,
+               "texture_heights" : [ 35, 55 ],
+               "clamp_heights": [35,55]
+            },
+            "noise_params" : [ 0.050, 0.020 ]
+         },
+         "badger:custom_water_level": {
+            "water_level": 28
+         },
+         
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.50,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#7CB85C"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.0,
+                  "grass_overlay_noise_scale" : 0.0,
+                  "grass_overlay_surface_color" : "#000000"
+               }
+            },
+            "map" : {
+               "biome_banner" : "map_screen/banners/legend_banner_biome_frostbite_fells.png",
+               "biome_display_name" : "nether_frost",
+               "common_resource_icon" : "/icons/resources/resource_frostbite_fells.png",
+               "map_color" : "#FFFFFF",
+               "map_color_odd" : "#FFFFFF",
+               "map_pattern_index" : 4
+            },
+            "particulates" : {
+               "nether_spores" : 0.0,
+               "sparkles" : 0.0
+            },
+            "rain" : {
+               "downfall" : 20.0,
+               "lower_limit" : 0.0,
+               "rain_to_snow_height" : 10,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.750,
+               "upper_limit" : 0.2000000029802322
+            },
+            "water" : {
+               "water_blur_distance" : 16.0,
+               "water_color_blend_distance" : 0.0,
+               "water_depths_color" : "#5AC2E9",
+               "water_surface_color" : "#02CDFF",
+               "water_surface_transparency" : 0.3000000119209290
+            },
+            "world" : {
+               "sky_weight" : 1.0
+            }
+         },
+         "minecraft:surface_parameters" : {
+            "default_surface" : {
+               "mid_material" : "badger:block_glacierrack",
+               "top_material" : "badger:block_glacierrack"
+            },
+            "foundation_material" : "badger:block_glacierrack",
+            "sea_floor_depth" : 4,
+            "sea_floor_material" : "badger:block_glacierrack",
+            "sea_material" : "badger:block_glacier_ice"
+         },
+         "overworld" : {}
+      },
+      "description" : {
+         "identifier" : "nether_frost"
+      }
+   }
+}

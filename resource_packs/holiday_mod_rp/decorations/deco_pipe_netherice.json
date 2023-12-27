@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_pipe_netherice": {
+      "geometry": "geometry.block_deco_pipe_netherice_geo", 
+      "shadow": true, 
+      "up": "world", 
+      "forward": "surface"
+    }
+  }
+}

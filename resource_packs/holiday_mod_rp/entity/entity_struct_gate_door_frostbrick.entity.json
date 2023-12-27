@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_gate_door_frostbrick"
+      }
+    },
+    "description": {
+      "animations": {
+        "closing": "animation.entity_struct_gate_door_frostbrick.closing",
+        "default": "controller.animation.entity_struct_gate_door_frostbrick.default",
+        "hidden": "animation.entity_struct_gate_door_frostbrick.hidden",
+        "open": "animation.entity_struct_gate_door_frostbrick.open",
+        "opening": "animation.entity_struct_gate_door_frostbrick.opening"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_gate_door_frostbrick"
+      },
+      "identifier": "badger:entity_struct_gate_door_frostbrick",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_player_frostbite": "mat_shared_block_entity_player_frostbite"
+      },
+      "particle_effects": {
+        "fx_close": "badger:fx_entity_struct_gate_door_frostbrick_close",
+        "fx_open": "badger:fx_entity_struct_gate_door_frostbrick"
+      },
+      "render_controllers": ["controller.render.entity_struct_gate_door_frostbrick"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "close": "BAE_STRUC_Gate_Close",
+        "open": "BAE_STRUC_Gate_Open"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_player_frostbite_d"
+      }
+    }
+  }
+}
