@@ -1,6 +1,8 @@
 # Tough Turtle Tussle REMIX
 ## About
-Tough Turtle Tussle REMIX(New name TBD) is an experimental mod for the PC version of _Minecraft Legends_. Built off of "Tough Turtle Tussle" by Daniel Savage with many of my own assets added. You goal is to defeat the Horde of the Frost.
+Tough Turtle Tussle REMIX(New name TBD) is an experimental mod for the PC version of _Minecraft Legends_. Built off of "Tough Turtle Tussle" by Daniel Savage with many other assets added. You goal is to defeat the Horde of the Frost.
+
+Many thanks to potato man (https://twitter.com/CagilMartin) for elite elf models!
 
 TODO: ADD IMAGES
 
