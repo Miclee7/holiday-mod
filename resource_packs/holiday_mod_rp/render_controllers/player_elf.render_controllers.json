@@ -1,0 +1,16 @@
+{
+  "render_controllers": {
+    "controller.render.player_elf": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_player_elf": "MetaMaterial.mat_player_elf"
+        },
+        {
+          "mat_fx_frozen_128": "MetaMaterial.mat_fx_frozen_128"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -4,10 +4,10 @@
             "game_mode": "holiday_mod",
             "parent": "badger:player_spawn_service"
         },
-        "default_mount_archetype": "badger:mount_animal_sea_turtle",
+        "default_mount_archetype": "",
         "min_block_radius": 100,
         "pending_villages": [],
-        "player_archetype": "minecraft:player",
+        "player_archetype": "badger:player_elf_gameplay",
         "respawn_seconds": 0.0
     }
 }

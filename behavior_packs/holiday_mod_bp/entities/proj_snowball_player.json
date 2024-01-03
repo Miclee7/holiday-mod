@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_snowball_player",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 0.6
+      },
+      "badger:projectile": {
+        "horizontal_speed": 100.0,
+        "min_flight_time": -1
+      },
+      "badger:projectile_physics": {
+        "gravity": 0
+      },
+      "badger:presentation_event": {
+        "on_entity_hit": {
+          "spawn_entity": [
+            "badger:proj_snowball_player_impact_aoe"
+          ]
+        }
+      },
+      "badger:telemetry_category": {
+        "category_name": "Miscellaneous"
+      }
+    }
+  }
+}

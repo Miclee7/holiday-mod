@@ -4,22 +4,13 @@ SNIPPET_VillageGenerated("holiday_mod_village_setup", (villageId) => {
     const villageDeck = DECK_Empty()
 
     // A center zone where the player will spawn (with some padding)
-    const centerZone = ZonesCard("addZone", 12)
-    DECK_MultiplyByMultipleRules(centerZone, [ZoneTagCard("villageDeadCenter"), ZoneHeightChangeCard("xmas1height")])
-    DECK_PutOnBottomOf(centerZone, villageDeck)
+    const firstZone = ZonesCard("addZone", 8)
+    DECK_MultiplyByMultipleRules(firstZone, [ZoneTagCard("villageMiddle"), PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START)])
+    DECK_PutOnBottomOf(firstZone, villageDeck)
 
-    // HACK: Instead of different village layouts, use a GV to flag spawner types.
-    if (QUERY_GetGlobalVariable("placed_wood_spawner") === 0) {
-        const woodSpawner = BuildableCard("culture1HouseSmall")
-        DECK_MultiplyByMultipleRules(woodSpawner, [ZoneFilterCard("villageDeadCenter")])
-        DECK_PutOnBottomOf(woodSpawner, villageDeck)
-
-        OUTPUT_SetGlobalVariable("placed_wood_spawner", 1)
-    } else {
-        const stoneSpawner = BuildableCard("culture1HouseMedium")
-        DECK_MultiplyByMultipleRules(stoneSpawner, [ZoneFilterCard("villageDeadCenter")])
-        DECK_PutOnBottomOf(stoneSpawner, villageDeck)
-    }
+    const elfSpawner = BuildableCard("centerFountain")
+    DECK_MultiplyByMultipleRules(elfSpawner, [ZoneFilterCard("villageMiddle"), PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ForceBuildingPlacementCard("forceBuildingPlacement")])
+    DECK_PutOnBottomOf(elfSpawner, villageDeck)
 
     // Deck data
     DECK_PutOnTopOf(EntityClearingCard("clearPiglinInvisibleSpawners"), villageDeck)
@@ -30,14 +21,11 @@ SNIPPET_VillageGenerated("holiday_mod_village_setup", (villageId) => {
 });
 
 SNIPPET_InheritsFromGameMode("holiday_mod", () => {
-    // HACK: Instead of different village layouts, use a GV to flag spawner types.
-    OUTPUT_SetGlobalVariable("placed_wood_spawner", 0)
-
     // Hook into when the player's villages are generated
     LISTENFOR_VillageGenerated({
         snippet: "holiday_mod_village_setup",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_VILLAGERS
+        factionName: "faction.cul.002"
     })
 });
 

@@ -6,7 +6,7 @@
     },
     "components": {
       "badger:faction": {
-        //Frostbite Fells
+        //frostbite
         "id": "faction.cul.002",
         "name": "villager.culture.002.name",
         "description": "villager.culture.002.description",

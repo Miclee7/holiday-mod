@@ -57,11 +57,16 @@
             "tags": ["holiday_mod", "set1"]
         },
         {
+          "biome": {
+            "biome": "grasslands",
+            "spread_priority": 1,
+            "starting_pixels": 4,
+            "total_pixels": 10
+        },
           "unique_card_id": "starting_area",
-          "map_data": "badger:villager_culture_001",
+          "map_data": "badger:villager_culture_002",
           "village_data": "badger:villager_village_002",
           "placement_name": "starting_area",
-          "allow_rivers_nearby": false,
           "placement_type": "village",
           "add_to_poi_graph": true,
           "initial_villages": {
@@ -77,8 +82,8 @@
             {
               "distance": {
                 "chunk_distance_from_parent": [
-                  0,
-                  10
+                  5,
+                  20
                 ],
                 "distance_to_zero_score": 20,
                 "tag_parent": "center",

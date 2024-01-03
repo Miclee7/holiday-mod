@@ -1,0 +1,34 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_snowball_hit",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "hit_pop" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_snowball_hit_regular_pop",
+               "type" : "emitter_bound"
+            }
+         },
+         "hit_spray" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_snowball_hit_regular_spray",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "hit_pop", "hit_spray" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

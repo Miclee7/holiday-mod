@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_snowball_player_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "AoE"
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 0.2
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "wedge",
+          "aperture_angle": 120,
+          "radius": 3.5,
+          "thickness": 2.0,
+          "position": [
+            0.0,
+            1.0,
+            -0.5
+          ]
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_snowball_impact",
+            "damage": 0.5,
+            "damage_types": [
+              "neutral",
+              "holiday_player"
+            ],
+            "include_tags": [
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "stunned": {
+                "strength": 0.5
+              }
+            },
+            "alliance_rule_filter": "enemy",
+            "knockback": {
+              "angle": 39,
+              "force": 57
+            }
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 0.0
+      }
+    }
+  }
+}

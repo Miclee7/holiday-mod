@@ -1,0 +1,100 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      /*"badger:face_animation": {
+        "anim_columns": 3,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },*/
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 3
+      },
+      /*"badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 40,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 5
+      },*/
+      "badger:rendering": {
+        "definition": "badger:mob_elf",
+        "limit": 512
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects_small"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.mob_elf.default",
+        "hit_reaction": "controller.animation.mob_elf.hit_reaction",
+        "idles": "controller.animation.mob_elf.idles",
+        "locomotion": "controller.animation.mob_elf.locomotion",
+        "walk_a": "animation.mob_elf.walk_a",
+        "idle_a": "animation.mob_elf.idle_a",
+        "throw_a": "animation.mob_elf.throw_a",
+        "spawn_a": "animation.mob_elf.spawn_a",
+        "death_a": "animation.mob_elf.death_a",
+        "hitreact_a": "animation.mob_elf.hitreact_a"
+      },
+      "enable_attachables": false,
+      //"face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.mob_elf"
+      },
+      "identifier": "badger:mob_elf",
+      "materials": {
+        "mat_mob_elf": "mat_mob_elf",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_med"
+      },
+      "render_controllers": ["controller.render.mob_elf"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.skin_mat = 0;"]
+      },
+      /*"sound_effects": {
+        "angry": "BAE_mob_elf_angry",
+        "cheer": "BAE_mob_elf_cheer",
+        "cheer_stop": "BAE_mob_elf_cheer_stop",
+        "death": "BAE_mob_elf_death",
+        "death_poof_large": "BAE_animal_death_poof_large",
+        "dx_cheer": "BAE_mob_elf_dx_cheer",
+        "dx_patpat": "BAE_mob_elf_dx_patpat",
+        "eat": "BAE_mob_elf_eat",
+        "hurt": "BAE_mob_elf_hurt",
+        "idle": "BAE_mob_elf_idle",
+        "knockback": "BAE_mob_elf_knockback",
+        "spit": "BAE_mob_elf_spit",
+        "step": "BAE_mob_elf_step",
+        "step_hop": "BAE_mob_elf_step_hop",
+        "step_sprint": "BAE_mob_elf_step_sprint",
+        "stun": "BAE_mob_elf_stun",
+        "swag": "BAE_mob_elf_swag"
+      },*/
+      "textures": {
+        "default": "textures/entity/tex_mob_elf_d"
+      }
+    }
+  }
+}

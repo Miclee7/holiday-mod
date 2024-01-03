@@ -1,0 +1,60 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_snowball_player",
+            "materials": {
+                "mat_proj_snowball": "mat_proj_snowball"
+            },
+            "geometry": {
+                "default": "geometry.proj_snowball"
+            },
+            "render_controllers": [
+                "controller.render.proj_snowball"
+            ],
+            "particle_effects": {
+                "fx_hit": "badger:fx_proj_snowball_hit",
+                "fx_hit_world": "badger:fx_proj_snowball_hit",
+                "fx_trail": "badger:fx_proj_snowball_trail"
+            },
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:rendering": {
+                "definition": "badger:proj_snowball"
+            },
+            "badger:projectile_trail_request": {
+                "name": "badger:trail_default"
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_proj_spit",
+                    "particles": {
+                        "effect": "fx_trail",
+                        "locator": "loc_fx_tip",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_entity_hit": {
+                    "particles": {
+                        "effect": "fx_hit",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    }
+                },
+                "on_world_hit": {
+                    "particles": {
+                        "effect": "fx_hit_world",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    }
+                }
+            },
+            "badger:keep_alive_timer": {
+                "time": 0.15
+            }
+        }
+    }
+}

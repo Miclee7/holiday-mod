@@ -1,0 +1,81 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_proj_snowball_trail",
+            "basic_render_parameters": {
+                "materials_list": [
+                    "mat_badger_fx_add_ramp_parts_fb_blue"
+                ]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "components": {
+            "badger:emitter_rate_distance": {
+                "particles_count": 1,
+                "distance": 1,
+                "max_particles": 10
+            },
+            "minecraft:emitter_lifetime_looping": {
+                "active_time": 1,
+                "sleep_time": 0
+            },
+            "badger:emitter_shape_cylinder": {
+                "offset": [
+                    0,
+                    0.1,
+                    0
+                ],
+                "arc_offset": -90.0,
+                "arc": 360.0,
+                "radius": 0.01,
+                "length": 1.0,
+                "vertical_angle": 85.0,
+                "thickness_ratio": 0.0,
+                "emission_mode": "base",
+                "direction_mode": "aligned"
+            },
+            "minecraft:particle_initial_speed": 2.0,
+            "minecraft:particle_initial_spin": {
+                "rotation": "Math.random(-10, 10)",
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.random(0.21,0.4)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_drag_coefficient": 1.0,
+                "linear_acceleration": [
+                    0,
+                    -20,
+                    0
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    0.15,
+                    0.15
+                ],
+                "facing_camera_mode": "rotate_xyz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 8,
+                        "rows_count": 4,
+                        "frame_iteration": "row",
+                        "row_index": [
+                            0,
+                            3
+                        ],
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

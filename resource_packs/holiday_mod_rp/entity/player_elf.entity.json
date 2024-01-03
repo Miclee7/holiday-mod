@@ -1,0 +1,158 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      /*"badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },*/
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 1,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1.25
+      },
+      "badger:keep_alive_timer": {
+        "time": 3
+      },
+      "badger:presentation_event": {
+        /*"intense_knockback": {
+          "audio": "BAE_piglin_bruiser_dx_knockback_intense"
+        },
+        "on_180_attack": {
+          "script": "180_attack"
+        },
+        "on_360_attack": {
+          "script": "360_attack"
+        },
+        "on_90_attack": {
+          "script": "90_attack"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_medium"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_player_bruiser_knockback_land"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_bruiser_dx_knockback_normal"
+        },*/
+        "on_advanced_direct_charge_all": {
+          "rumble": {
+            "duration": 0.5,
+            "override": false,
+            "priority": 3,
+            "strength": 25
+          }
+        },
+        "on_advanced_direct_charge_single": {
+          "rumble": {
+            "duration": 0.25,
+            "override": false,
+            "priority": 3,
+            "strength": 15
+          }
+        },
+        "on_advanced_direct_force_all": {
+          "rumble": {
+            "duration": 0.5,
+            "override": false,
+            "priority": 3,
+            "strength": 25
+          }
+        },
+        "on_advanced_direct_force_single": {
+          "rumble": {
+            "duration": 0.25,
+            "override": false,
+            "priority": 3,
+            "strength": 15
+          }
+        },
+        "on_building_stairs_wood": {
+          "audio": "BAE_UI_sb_build_utility_stairs_wood"
+        },
+        "on_building_terraform_gather_surface_wood": {
+          "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_wood"
+        },
+        "on_direct": {
+          "rumble": {
+            "duration": 0.25,
+            "override": false,
+            "priority": 3,
+            "strength": 20
+          }
+        },
+        "on_lure": {
+          "rumble": {
+            "duration": 0.25,
+            "override": false,
+            "priority": 3,
+            "strength": 15
+          },
+          "spawn_entity": {
+            "entities":  [
+              {
+                "entity": "badger:mob_lure_instant_visual",
+                "should_parent_transform": true
+              }
+            ]
+          }
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:player_elf",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_villager","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "actions": "controller.animation.player_elf.actions",
+        "audio": "controller.animation.player_elf.audio",
+        "default": "controller.animation.player_elf.default",
+        "hit_reaction": "controller.animation.player_elf.hit_reaction",
+        "idles": "controller.animation.player_elf.idles",
+        "locomotion": "controller.animation.player_elf.locomotion",
+        "walk_a": "animation.player_elf.walk_a",
+        "idle_a": "animation.player_elf.idle_a",
+        "throw_a": "animation.player_elf.throw_a",
+        "spawn_a": "animation.player_elf.spawn_a",
+        "death_a": "animation.player_elf.death_a",
+        "hitreact_a": "animation.player_elf.hitreact_a"
+      },
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.player_elf"
+      },
+      "identifier": "badger:player_elf",
+      "materials": {
+        "mat_player_elf": "mat_player_elf",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_frozen_129": "mat_fx_frozen_129"
+      },
+      "render_controllers": ["controller.render.player_elf"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "actions": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.skin_mat = 0;"]
+      }
+    }
+  }
+}

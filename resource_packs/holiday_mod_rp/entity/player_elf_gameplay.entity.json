@@ -1,0 +1,133 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:player_elf_gameplay"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_lure": {
+          "spawn_entity": {
+              "entities": [{
+                      "entity": "badger:mob_lure_instant_visual",
+                      "should_parent_transform": true
+                  }
+              ]
+          },
+          "rumble": {
+              "duration": 0.25,
+              "strength": 15,
+              "priority": 3,
+              "override": false,
+              "range": 0.0
+          }
+        },
+        "on_direct": {
+            "rumble": {
+                "duration": 0.25,
+                "strength": 20,
+                "priority": 3,
+                "override": false,
+                "range": 0.0
+            }
+        },
+        "on_advanced_direct_force_all": {
+            "rumble": {
+                "duration": 0.5,
+                "strength": 25,
+                "priority": 3,
+                "override": false,
+                "range": 0.0
+            }
+        },
+        "on_advanced_direct_force_single": {
+            "rumble": {
+                "duration": 0.25,
+                "strength": 15,
+                "priority": 3,
+                "override": false,
+                "range": 0.0
+            }
+        },
+        "on_advanced_direct_charge_all": {
+            "rumble": {
+                "duration": 0.5,
+                "strength": 25,
+                "priority": 3,
+                "override": false,
+                "range": 0.0
+            }
+        },
+        "on_advanced_direct_charge_single": {
+            "rumble": {
+                "duration": 0.25,
+                "strength": 15,
+                "priority": 3,
+                "override": false,
+                "range": 0.0
+            }
+        },
+        "hero_lure_stop": {
+            "audio": "BAE_hero_lure_off",
+            "rumble": {
+                "duration": 0.35,
+                "strength": 25,
+                "priority": 3,
+                "override": false,
+                "range": 0.0
+            }
+        },
+        "on_death": {
+            "rumble": {
+                "duration": 0.85,
+                "strength": 100,
+                "priority": 1,
+                "override": true,
+                "range": 0.0
+            }
+        },
+        "weak_hit": {
+          "rumble": {
+            "duration": 0.15,
+            "strength": 20,
+            "priority": 3,
+            "override": true,
+            "range": 0.0
+          }
+        },
+        "weak_knockback": {
+          "rumble": {
+            "duration": 0.15,
+            "strength": 20,
+            "priority": 3,
+            "override": true,
+            "range": 0.0
+          }
+        },
+        "on_building_terraform_gather_surface_wood": {
+					"audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_wood"
+				},
+				"on_building_stairs_wood": {
+					"audio": "BAE_UI_sb_build_utility_stairs_wood"
+				}
+      },
+      "badger:hero_lure_presentation": {
+        "start_trigger": "hero_lure_start",
+        "stop_trigger": "hero_lure_stop"
+      },
+      "badger:input_actions": {
+        "actions": [
+          {
+            "action_name": "elf_ranged_attack",
+            "action_targeting_type": "target",
+            "target_range": 15,
+            "target_facing": "player_facing",
+            "input_id": "button.hero_action_1",
+            "input_action_mode": "trigger"
+          }
+        ]
+      },
+      "badger:template": "badger:player_elf"
+    }
+  }
+}

@@ -70,7 +70,7 @@
         "tags": [
           "culture1HouseSmall"
         ],
-        "buildable": "badger:spawner_wood_golem"
+        "buildable": "badger:spawner_mob_elf"
       },
       {
         "unique_card_id": "badger_culture1HouseMedium",
@@ -518,6 +518,15 @@
         ],
         "zone_filter": "pathConnectionZoneNorth",
         "exclude": false
+      },
+      {
+        "unique_card_id": "zone_filter_cards_villageMiddle",
+        "cost": 0,
+        "tags": [
+          "villageMiddle"
+        ],
+        "zone_filter": "villageMiddle",
+        "exclude": false
       }
     ],
     "zone_tag_cards": [
@@ -720,6 +729,14 @@
           "pathConnectionZoneNorth"
         ],
         "zone_tag": "pathConnectionZoneNorth"
+      },
+      {
+        "unique_card_id": "zone_tag_cards_villageMiddle",
+        "cost": 0,
+        "tags": [
+          "villageMiddle"
+        ],
+        "zone_tag": "villageMiddle"
       }
     ],
     "district_cards": [

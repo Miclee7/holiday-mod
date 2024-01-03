@@ -18,7 +18,7 @@
         "poi_tower_02_resource",
         "poi_tower_04_resource"
       ],
-      "max_hotbar_size": 2,
+      "max_hotbar_size": 3,
       "show_interactable_building": true,
       // Order of toolbar_items must match order of songbook_categories
       "toolbar_items": [
@@ -27,7 +27,8 @@
           "toolbar_id": "resourcing",
           "initial_hotbar_items": [
             "badger:terraform_gather_surface_wood",
-            "badger:stairs_wood"
+            "badger:stairs_wood",
+            "badger:spawner_mob_elf"
           ]
         }
       ],

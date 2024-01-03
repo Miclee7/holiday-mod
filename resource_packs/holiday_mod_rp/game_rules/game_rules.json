@@ -7,10 +7,10 @@
         "creativemodedefault": false,
         "devplaygroundenabled": true,
         "difficultymodeenabled": true,
-        "dodaylightcycle": false,
+        "dodaylightcycle": true,
         "dofogofwar": false,
         "doplayersinvincible": false,
-        "doweathercycle": false,
+        "doweathercycle": true,
         "enablecinematicdeaths": false,
         "enableunlocks": true,
         "entitystreamingenabled": true,
@@ -26,6 +26,7 @@
         "teamcolors": false,
         "use_flatlands_level_id": false,
         "useactiontelemetry": false,
-        "worldsizeaxischunks": 100
+        "allowislands": true,
+        "worldsizeaxischunks": 200
     }
 }

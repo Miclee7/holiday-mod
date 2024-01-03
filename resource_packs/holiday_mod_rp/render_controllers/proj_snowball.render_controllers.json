@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.proj_snowball": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "mat_proj_snowball": "MetaMaterial.mat_proj_snowball"
+                }
+            ]
+        }
+    }
+}
